@@ -57,6 +57,13 @@
         caption a {
             font-weight: bold;
         }
+
+        /* Inline-block styling for content portions */
+        .inline-block {
+            display: inline-block;
+            vertical-align: top; /* Aligns the inline-block elements at the top */
+            margin-right: 20px; /* Space between inline-block elements */
+        }
     </style>
 </head>
 
@@ -66,11 +73,13 @@
         <!-- Content A -->
         <div class="content-box">
             <div class="content-header">Content A</div>
-            <h2>Hi/Max Real Estate & Houses</h2>
-            <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why
-                so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted
-                Real Estate Agents in Canada six times in a row.</p>
-            <a href="https://www.google.ca/">Let's get started</a>
+            <div class="inline-block">
+                <h2>Hi/Max Real Estate & Houses</h2>
+                <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why
+                    so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted
+                    Real Estate Agents in Canada six times in a row.</p>
+                <a href="https://www.google.ca/">Let's get started</a>
+            </div>
         </div>
 
         <!-- Row for Content C and Content B -->
@@ -79,100 +88,10 @@
                 <!-- Content C -->
                 <div class="content-box">
                     <div class="content-header">Content C</div>
-                    <h2>Why choosing HI/Max</h2>
-                    <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is
-                        extremely community focused, and our agents are too!</p>
-                    <h3>Stats of HI/Max</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th rowspan="2">Year</th>
-                                <th colspan="2">Sold Properties</th>
-                                <th colspan="2">Average Selling Price</th>
-                            </tr>
-                            <tr>
-                                <th>Quebec</th>
-                                <th>Ontario</th>
-                                <th>Single House</th>
-                                <th>Condo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">2021</th>
-                                <td>50</td>
-                                <td>100</td>
-                                <td>$500,000</td>
-                                <td>$189,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2022</th>
-                                <td>100</td>
-                                <td>200</td>
-                                <td>$780,000</td>
-                                <td>$240,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <!-- Content B -->
-                <div class="content-box">
-                    <div class="content-header">Content B</div>
-                    <h3>Related resources</h3>
-                    <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next
-                        move.</p>
-                    <ul>
-                        <li><a href="https://www.google.ca/">Looking for an upgrade? </a></li>
-                        <li><a href="https://www.google.ca/">Buying tips</a></li>
-                        <li><a href="https://www.google.ca/">How much is your current home worth?</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content D -->
-        <div class="content-box">
-            <div class="content-header">Content D</div>
-            <h3>More Resources on How to Choose the Right Agent</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="img-container">
-                        <img src="1.png" alt="What Are The Risks of Selling a Home Yourself">
-                    </div>
-                    <caption><a href="https://www.google.ca/">What Are The Risks of Selling a Home Yourself?</a></caption>
-                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they
-                        could conquer a project that would have been better left to the professionals. Read more</p>
-                    <div class="content-header">Content F</div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="img-container">
-                        <img src="2.png" alt="7 Questions to Ask a Real Estate Agent Before You Commit">
-                    </div>
-                    <caption><a href="https://www.google.ca/">7 Questions to Ask a Real Estate Agent Before You
-                            Commit</a></caption>
-                    <p>According to research by the National Association of Realtors, there are considerable benefits to
-                        working with a real estate agent, including higher sale prices.</p>
-                    <div class="content-header">Content G</div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="img-container">
-                        <img src="3.png" alt="8 Reasons to Hire an Agent When Selling Your Home">
-                    </div>
-                    <caption><a href="https://www.google.ca/">8 Reasons to Hire an Agent When Selling Your Home</a></caption>
-                    <p>With all the many different moving parts involved in selling your home, here are eight very valid
-                        reasons to have a real estate agent on speed dial.</p>
-                    <div class="content-header">Content H</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</body>
-
-</html>
+                    <div class="inline-block">
+                        <h2>Why choosing HI/Max</h2>
+                        <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is
+                            extremely community focused, and our agents are too!</p>
+                        <h3>Stats of HI/Max</h3>
+                        <table>
+       
