@@ -3,118 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi/Max Real Estate - Welcome</title>
+    <title>Real Estate</title>
     <style>
-        .social a svg {
-            width: 30px;
-            fill: #91929a;
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        img {
-            max-width: 100%;
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Content Section */
+        .content {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        thead th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tbody th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        th[scope="colgroup"] {
+            background-color: #555;
+        }
+
+        td {
+            color: #333;
+        }
+
+        /* Flexbox layout for resources */
+        .resources {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .resources > div {
+            width: 30%;
+        }
+
+        .resources img {
+            width: 100%;
             height: auto;
         }
-        section {
-            margin-bottom: 20px;
+
+        .resources p {
+            margin-bottom: 10px;
+        }
+
+        /* Content box highlighting */
+        .content-box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Link styles */
+        a {
+            color: blue;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Content A -->
+        <div class="content highlight">
+            <h2>Hi/Max Real Estate & Houses</h2>
+            <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
+            <a href="https://www.google.ca/">Let's get started</a>
+        </div>
 
-    <!-- Header Section -->
-    <header role="banner" aria-label="Main Site Header">
-        <h1>Hi/Max Real Estate</h1>
-        <p>Buying or selling a home is one of the most important transactions you'll make. Trust Hi/MAX Real Estate for expert guidance.</p>
-    </header>
+        <!-- Content B -->
+        <div class="content-box highlight">
+            <h2>Related resources</h2>
+            <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
+            <ul>
+                <li><a href="https://www.google.ca/">Looking for an upgrade?</a></li>
+                <li><a href="https://www.google.ca/">Buying tips</a></li>
+                <li><a href="https://www.google.ca/">How much is your current home worth?</a></li>
+            </ul>
+        </div>
 
-    <!-- Navigation Section -->
-    <nav role="navigation" aria-label="Main Navigation">
-        <ul>
-            <li><a href="index-en.html">Home</a></li>
-            <li><a href="internet-en.html">Buying</a></li>
-            <li><a href="intranet-en.html">Selling</a></li>
-            <li><a href="faq-en.html">FAQs</a></li>
-            <li><a href="contact-en.html">Contact us</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main role="main" aria-label="Main Content">
-        <section>
-            <h2>Why Choose Hi/Max</h2>
-            <p>Hi/Max agents go above and beyond and always strive to be the best they can be. Hi/MAX is extremely community-focused and our agents are too!</p>
-            <img src="https://github.com/KarthikUrala/lab6/raw/main/1.png" alt="Image illustrating Hi/Max services" />
-        </section>
-
-        <section>
-            <h2>Stats of HI/Max</h2>
-            <table border="1">
-                <caption>Property Sales Stats</caption>
+        <!-- Content C -->
+        <div class="content highlight">
+            <h2>Why choosing Hi/Max</h2>
+            <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely <span class="highlight">community focused</span>, and our agents are too!</p>
+            <h3>Stats of HI/Max</h3>
+            <table>
                 <thead>
                     <tr>
-                        <th id="year">Year</th>
-                        <th id="qc-sold">Quebec Sold Properties</th>
-                        <th id="on-sold">Ontario Sold Properties</th>
-                        <th id="single-price">Single House Avg Price</th>
-                        <th id="condo-price">Condo Avg Price</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Quebec</th>
+                        <th scope="col">Ontario</th>
+                        <th scope="col">Single House</th>
+                        <th scope="col">Condo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td headers="year">2021</td>
-                        <td headers="qc-sold">50</td>
-                        <td headers="on-sold">100</td>
-                        <td headers="single-price">$50,000</td>
-                        <td headers="condo-price">$189,000</td>
+                        <th scope="row">2021</th>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>$500,000</td>
+                        <td>$189,000</td>
                     </tr>
                     <tr>
-                        <td headers="year">2022</td>
-                        <td headers="qc-sold">100</td>
-                        <td headers="on-sold">200</td>
-                        <td headers="single-price">$78,000</td>
-                        <td headers="condo-price">$240,000</td>
+                        <th scope="row">2022</th>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>$780,000</td>
+                        <td>$240,000</td>
                     </tr>
                 </tbody>
             </table>
-            <img src="https://github.com/KarthikUrala/lab6/raw/main/2.png" alt="Graph showing sales statistics" />
-        </section>
-
-        <section>
-            <h2>Related Resources</h2>
-            <ul>
-                <li><a href="#">It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</a></li>
-                <li><a href="#">Looking for an upgrade? Buying tips</a></li>
-                <li><a href="#">How much is your current home worth?</a></li>
-            </ul>
-            <img src="https://github.com/KarthikUrala/lab6/raw/main/3.png" alt="Resources related to buying and selling" />
-        </section>
-
-        <section>
-            <h2>More Resources on Choosing the Right Agent</h2>
-            <p>What Are The Risks of Selling a Home Yourself? We've all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
-            <a href="#">Read more</a>
-        </section>
-
-        <section>
-            <h2>7 Questions to Ask a Real Estate Agent Before You Commit</h2>
-            <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
-        </section>
-
-        <section>
-            <h2>8 Reasons to Hire an Agent When Selling Your Home</h2>
-            <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer role="contentinfo" aria-label="Footer">
-        <div class="social">
-            <a href="https://twitter.com/yourprofile" aria-label="Follow us on Twitter">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
-                </svg>
-            </a>
         </div>
-    </footer>
 
+        <!-- Content D -->
+        <div class="content highlight">
+            <h3>More Resources on How to Choose the Right Agent</h3>
+            <div class="resources">
+                <div>
+                    <img src="1.png" alt="What Are The Risks of Selling a Home Yourself">
+                    <a href="https://www.google.ca/">What Are The Risks of Selling a Home Yourself?</a>
+                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
+                </div>
+                <div>
+                    <img src="2.png" alt="7 Questions to Ask a Real Estate Agent">
+                    <a href="https://www.google.ca/">7 Questions to Ask a Real Estate Agent Before You Commit</a>
+                    <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
+                </div>
+                <div>
+                    <img src="3.png" alt="8 Reasons to Hire an Agent When Selling Your Home">
+                    <a href="https://www.google.ca/">8 Reasons to Hire an Agent When Selling Your Home</a>
+                    <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
